@@ -11,12 +11,18 @@ export default function Home() {
   return (
     <main className='min-h-screen text-white'>
       <div className='relative'>
-        <Image src={image1} quality={100} priority alt='' className='w-full' />
+        <Image
+          src={image1}
+          quality={100}
+          priority
+          alt=''
+          className='max-h-screen w-full object-cover object-top'
+        />
         <div className='absolute inset-0'>
           <h1 className='mt-10 px-5 text-center text-5xl font-bold'>
             LockheedMartinInu
           </h1>
-          <div className='absolute bottom-[-200px] flex w-full justify-center'>
+          <div className='absolute bottom-[-370px] flex w-full justify-center'>
             <Image
               src={image2}
               quality={100}
@@ -26,7 +32,7 @@ export default function Home() {
               className='max-w-[90%]'
             />
           </div>
-          <div className='absolute bottom-[-250px] left-1/2 flex w-full max-w-screen-desktop -translate-x-1/2 justify-between overflow-hidden sm:bottom-[-300px] md:bottom-[-370px]'>
+          <div className='absolute bottom-[-420px] left-1/2 flex w-full max-w-screen-desktop -translate-x-1/2 justify-between overflow-hidden sm:bottom-[-470px] md:bottom-[-540px]'>
             <Image
               src={image3}
               quality={100}
@@ -48,10 +54,22 @@ export default function Home() {
       </div>
 
       <div>
-        <Image src={image5} quality={100} priority alt='' className='w-full' />
+        <Image
+          src={image5}
+          quality={100}
+          priority
+          alt=''
+          className='max-h-screen w-full object-cover object-top'
+        />
       </div>
       <div>
-        <Image src={image6} quality={100} priority alt='' className='w-full' />
+        <Image
+          src={image6}
+          quality={100}
+          priority
+          alt=''
+          className='max-h-screen w-full object-cover object-top'
+        />
       </div>
     </main>
   );
