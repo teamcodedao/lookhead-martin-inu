@@ -12,12 +12,13 @@ import maga6Img from './maga-6.gif';
 export default function Home() {
   return (
     <main className='min-h-screen text-white'>
-      <div className='relative overflow-hidden'>
+      <div className='relative overflow-hidden bg-[url(./flag.png)] bg-cover'>
         <Image
           src={flagGif}
           priority
           quality={100}
           alt=''
+          unoptimized
           className='min-h-[600px] w-[128%] max-w-none object-cover object-top sm:min-h-[700px] md:min-h-[800px]'
         />
         <div className='absolute inset-0'>
@@ -85,7 +86,13 @@ export default function Home() {
         <div className='absolute inset-0'>
           <div className='relative mx-auto h-full max-w-screen-desktop max-desktop:px-5'>
             <div className='ml-2 max-w-[30%] pt-14'>
-              <Image src={maga5Img} alt='' width={482} className='w-[482px]' />
+              <Image
+                src={maga5Img}
+                alt=''
+                width={482}
+                unoptimized
+                className='w-[482px]'
+              />
             </div>
             <div className='-mt-10 mr-4 flex justify-end lg:-mt-20 xl:-mt-36'>
               <div className='max-w-[30%]'>
@@ -93,6 +100,7 @@ export default function Home() {
                   src={maga6Img}
                   alt=''
                   width={392}
+                  unoptimized
                   className='w-[392px]'
                 />
               </div>
