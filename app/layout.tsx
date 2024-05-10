@@ -1,22 +1,15 @@
 import type {Metadata} from 'next';
-import {Single_Day, Bebas_Neue} from 'next/font/google';
+import {Inter} from 'next/font/google';
 import clsx from 'clsx';
 import './globals.css';
 
-const font = Bebas_Neue({
-  weight: ['400'],
+const font = Inter({
   subsets: ['latin'],
 });
 
-const singleDayFont = Single_Day({
-  weight: ['400'],
-  variable: '--single-day-font',
-  display: 'swap',
-});
-
 export const metadata: Metadata = {
-  title: 'MAGA WIF',
-  description: 'Make America Great Again!',
+  title: 'Lockheed Martin Inu',
+  description: 'Lockheed Martin Inu. Drop Love Bombs',
 };
 
 export default function RootLayout({
@@ -26,9 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={clsx(font.className, singleDayFont.variable)}>
-        {children}
-      </body>
+      <body className={clsx(font.className)}>{children}</body>
     </html>
   );
 }
