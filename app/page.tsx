@@ -106,14 +106,22 @@ export default function Home() {
               </div>
             </div>
             <div className='absolute bottom-5 left-5 flex gap-x-8 *:multi-["transition;duration-300;block"] sm:bottom-10 [&_*:hover]:multi-["rotate-180"]'>
-              <a href='/' target='_telegram' aria-label='telegram'>
+              <a
+                href={process.env.NEXT_PUBLIC_TELEGRAM_URL}
+                target='_telegram'
+                aria-label='telegram'
+              >
                 <img
                   src='/telegram.png'
                   alt=''
                   className='size-[60px] lg:size-[80px]'
                 />
               </a>
-              <a href='/' target='_twitter' aria-label='twitter'>
+              <a
+                href={process.env.NEXT_PUBLIC_TWITTER_URL}
+                target='_twitter'
+                aria-label='twitter'
+              >
                 <img
                   src='/twitter.svg'
                   alt=''
