@@ -17,12 +17,32 @@ export default function Home() {
             LockheedMartinInu
           </h1>
           <div className='absolute bottom-[-200px] flex w-full justify-center'>
-            <Image src={image2} quality={100} width={1105} priority alt='' />
+            <Image
+              src={image2}
+              quality={100}
+              width={1105}
+              priority
+              alt=''
+              className='max-w-[90%]'
+            />
           </div>
-
-          <div className='absolute bottom-[-200px] flex w-full justify-between'>
-            <Image src={image3} quality={100} width={509} priority alt='' />
-            <Image src={image4} quality={100} width={379} priority alt='' />
+          <div className='absolute bottom-[-250px] left-1/2 flex w-full max-w-screen-desktop -translate-x-1/2 justify-between overflow-hidden sm:bottom-[-300px] md:bottom-[-370px]'>
+            <Image
+              src={image3}
+              quality={100}
+              width={509}
+              priority
+              alt=''
+              className='max-w-[35%]'
+            />
+            <Image
+              src={image4}
+              quality={100}
+              width={379}
+              priority
+              alt=''
+              className='max-w-[30%]'
+            />
           </div>
         </div>
       </div>
