@@ -68,6 +68,46 @@ export default function Home() {
           <span key={index}>{'>'}</span>
         ))}
       </div>
+
+      <div className='mx-auto max-w-screen-desktop'>
+        <div className='flex flex-col gap-x-10 gap-y-5 sm:flex-row'>
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload='auto'
+            className='aspect-square shrink-0 object-cover sm:max-w-[min(508px,50%)]'
+          >
+            <source src='/intro-5.mp4' type='video/mp4' />
+          </video>
+          <div className='grow'>
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload='auto'
+              className='size-full object-cover'
+            >
+              <source src='/intro-6.mp4' type='video/mp4' />
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <div className='mt-5'>
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload='auto'
+          className='max-h-screen w-full object-cover'
+        >
+          <source src='/intro-7.mp4' type='video/mp4' />
+        </video>
+      </div>
     </main>
   );
 }
