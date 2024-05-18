@@ -1,6 +1,9 @@
+import Image from 'next/image';
 import clsx from 'clsx';
 
 import HeaderBanner from './header-banner';
+
+import background1 from './background-1.png';
 
 export default function Home() {
   return (
@@ -107,6 +110,25 @@ export default function Home() {
         >
           <source src='/intro-7.mp4' type='video/mp4' />
         </video>
+      </div>
+
+      <div className='relative'>
+        <Image
+          src={background1}
+          priority
+          alt=''
+          className='w-full object-cover'
+        />
+        <div className='absolute inset-0 flex flex-col'>
+          <img src='/trum-1.gif' alt='' className='mx-auto block shrink-0' />
+          <div className='mt-auto flex grow justify-center'>
+            <img
+              src='/trum-2.gif'
+              alt=''
+              className='max-h-[800] object-contain'
+            />
+          </div>
+        </div>
       </div>
     </main>
   );
