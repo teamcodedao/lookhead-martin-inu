@@ -2,6 +2,7 @@ import Image from 'next/image';
 import clsx from 'clsx';
 
 import HeaderBanner from './header-banner';
+import Footer from './footer';
 
 import background1 from './background-1.png';
 
@@ -130,6 +131,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Footer />
     </main>
   );
 }
