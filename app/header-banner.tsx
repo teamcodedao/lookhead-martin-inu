@@ -14,7 +14,7 @@ export default function HeaderBanner() {
           loop
           playsInline
           preload='auto'
-          className='w-full object-cover'
+          className='max-h-screen w-full object-cover'
         >
           <source src='/intro-1.mp4' type='video/mp4' />
         </video>
@@ -24,7 +24,7 @@ export default function HeaderBanner() {
             priority
             quality={100}
             alt=''
-            className='mx-auto block max-w-[min(1160px,100%)]'
+            className='mx-auto block'
           />
         </div>
       </header>
